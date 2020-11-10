@@ -15,11 +15,440 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Hello, world!</title>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <title>အဝယ်တော် | Shopping Mall</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- Additional Header -->
+    <div class="d-block bg-dark text-white text-right pr-3 py-1">
+      <span class="mr-3"
+        >Phone: +959767682526, +959767682526, +959767682526</span
+      >
+      <a href="#" class="mr-2">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <!-- # Additional Header -->
+
+    <!-- Nav Bar -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow-sm"
+    >
+      <img
+        class="mr-2"
+        width="40px"
+        height="40px"
+        src="assets/img/icons/logo.svg"
+      />
+      <a class="navbar-brand text-danger font-lg font-weight-bold" href="#"
+        ><h3><b>အဝယ်တော်</b></h3></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link font-weight-bold" href="#"
+              >ပင်မစာမျက်နှာ <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="#"
+              >အမျိုးအစားများ <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <form class="form-inline my-2 my-lg-0 input-group-sm">
+            <input
+              class="form-control mr-sm-2 font-weight-bold"
+              type="search"
+              placeholder="ပစ္စည်းများ..."
+            />
+            <button
+              class="btn btn-danger my-2 my-sm-0 btn-sm font-weight-bold"
+              type="submit"
+            >
+              ရှာမယ်လေ
+            </button>
+          </form>
+        </ul>
+        <button class="btn">
+          <img src="assets/img/icons/shopping-cart.svg" alt="..." />
+          <span
+            class="badge badge-pill badge-danger mr-4 position-absolute mt-3"
+            >0</span
+          >
+        </button>
+        |
+        <a href="#" class="ml-4 mr-2">Login</a>
+        <button class="btn btn-outline-danger btn-sm">Register</button>
+      </div>
+    </nav>
+    <!-- # Nav Bar -->
+
+    <div class="container">
+      <!-- Coursel -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide mx-auto mt-3"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/coca-cola.jpg"
+              class="d-block w-100 rounded-lg"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/elan-cover.jpg"
+              class="d-block w-100 rounded-lg"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/fresh-meats.jpg"
+              class="d-block w-100 rounded-lg"
+              alt="..."
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- # Coursel -->
+
+      <!-- အဓိကဟင်းချက်ပစ္စည်းများ -->
+      <div class="mt-5 mb-5">
+        <div class="d-flex justify-content-between">
+          <h4 class="font-weight-bold mr-auto">အဓိကဟင်းချက်ပစ္စည်းများ</h4>
+          <button class="btn ml-auto btn-view-all">အားလုံးကြည့်မယ်</button>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0 position-relative">
+              <img
+                src="assets/img/main-ingredients-in-curry/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>ကြက်သွန်ဖြူကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၃၀ ကျပ်သား</span>
+                -
+                <span class="text-success font-weight-bold">500 ks</span>
+
+                <!-- quantity -->
+                <div
+                  class="my-2 quantity-control position-absolute shadow-lg py-2 ml-5 mt-5"
+                >
+                  <button class="btn rounded-lg btn-quantity-control">
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </button>
+                  <input
+                    class="form-control d-inline w-25"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                  <button class="btn rounded-lg btn-quantity-control">
+                    <ion-icon name="add-outline"></ion-icon>
+                  </button>
+                </div>
+                <!-- # quantity -->
+
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/main-ingredients-in-curry/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>ကြက်သွန်ဖြူကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၃၀ ကျပ်သား</span>
+                -
+                <span class="text-success font-weight-bold">500 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/main-ingredients-in-curry/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>ကြက်သွန်ဖြူကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၃၀ ကျပ်သား</span>
+                -
+                <span class="text-success font-weight-bold">500 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/main-ingredients-in-curry/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>ကြက်သွန်ဖြူကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၃၀ ကျပ်သား</span>
+                -
+                <span class="text-success font-weight-bold">500 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/main-ingredients-in-curry/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>ကြက်သွန်ဖြူကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၃၀ ကျပ်သား</span>
+                -
+                <span class="text-success font-weight-bold">500 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/main-ingredients-in-curry/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>ကြက်သွန်ဖြူကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၃၀ ကျပ်သား</span>
+                -
+                <span class="text-success font-weight-bold">500 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+        </div>
+      </div>
+      <!-- # အဓိကဟင်းချက်ပစ္စည်းများ -->
+
+      <!-- ဟင်းသီးဟင်းရွက်များ -->
+      <div class="mt-5 mb-5">
+        <div class="d-flex justify-content-between">
+          <h4 class="font-weight-bold mr-auto">ဟင်းသီးဟင်းရွက်များ</h4>
+          <button class="btn ml-auto btn-view-all">အားလုံးကြည့်မယ်</button>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/vegetables/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>သခွားသီးကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၁ ခု</span>
+                -
+                <span class="text-success font-weight-bold">300 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/vegetables/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>သခွားသီးကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၁ ခု</span>
+                -
+                <span class="text-success font-weight-bold">300 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/vegetables/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>သခွားသီးကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၁ ခု</span>
+                -
+                <span class="text-success font-weight-bold">300 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/vegetables/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>သခွားသီးကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၁ ခု</span>
+                -
+                <span class="text-success font-weight-bold">300 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/vegetables/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>သခွားသီးကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၁ ခု</span>
+                -
+                <span class="text-success font-weight-bold">300 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+
+          <div class="col-2">
+            <!-- card -->
+            <div class="card-product border-0">
+              <img
+                src="assets/img/vegetables/1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="text-center">
+                <h6>သခွားသီးကြီးကြီး</h6>
+                <span class="text-primary font-weight-bold">၁ ခု</span>
+                -
+                <span class="text-success font-weight-bold">300 ks</span>
+                <a href="#" class="btn btn-sm mt-3 btn-add-to-cart"
+                  >ခြင်းထဲထည့်မယ်</a
+                >
+              </div>
+            </div>
+            <!-- # card -->
+          </div>
+        </div>
+      </div>
+      <!-- # ဟင်းသီးဟင်းရွက်များ -->
+    </div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
