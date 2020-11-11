@@ -1,3 +1,18 @@
+@font-face {
+  font-family: system_font;
+  src: url(../fonts/Cerebrisans/regular.ttf);
+}
+
+html,
+*,
+body {
+  font-family: system_font;
+}
+
+.bg-blue {
+  background-color: #4285f4;
+}
+
 .card-product {
   width: 11rem;
 }
@@ -34,13 +49,13 @@
   background-color: blanchedalmond;
 }
 
+.link-blue:hover {
+  color: white;
+}
+
 .btn-view-all:hover {
   color: #f32f43;
   text-decoration: underline;
-}
-
-.btn-quantity-control:hover {
-  /* background-color: rgb(221, 221, 221); */
 }
 
 .quantity-control {
