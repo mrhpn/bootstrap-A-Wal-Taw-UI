@@ -12,10 +12,23 @@ body {
 .bg-glass {
   width: 100%;
   background: inherit;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.9) !important;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.list-group {
+  border-radius: 5px;
+  border: 1px solid #dc354618;
+}
+
+.list-group .list-group-item:hover {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: height ease-in-out 0.3s;
+  background-color: #dc3545;
 }
 
 .bg-blue {

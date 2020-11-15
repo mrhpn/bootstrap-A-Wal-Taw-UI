@@ -37,65 +37,103 @@
     <nav
       class="navbar navbar-expand-lg sticky-top navbar-light bg-glass border-bottom shadow-sm"
     >
-      <img
-        class="mr-2"
-        width="40px"
-        height="40px"
-        src="assets/img/icons/logo.svg"
-      />
-      <a class="navbar-brand text-danger font-lg font-weight-bold" href="#"
-        ><h3><b>အဝယ်တော်</b></h3></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link font-weight-bold" href="#"
-              >ပင်မစာမျက်နှာ <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="#"
-              >အမျိုးအစားများ <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <form class="form-inline ml-3 my-lg-0 input-group-sm">
-            <input
-              class="form-control mr-sm-2 font-weight-bold"
-              type="search"
-              placeholder="ဒီမှာရှာပါ..."
-            />
-            <!-- <button
-              class="btn btn-danger my-2 my-sm-0 btn-sm font-weight-bold"
-              type="submit"
-            >
-              ရှာမယ်လေ
-            </button> -->
-          </form>
-        </ul>
-        <button class="btn">
-          <img src="assets/img/icons/shopping-cart.svg" alt="..." />
-          <span
-            class="badge badge-pill badge-danger mr-4 position-absolute mt-3"
-            >0</span
-          >
-        </button>
-        |
-        <a href="login.html" class="ml-4 mr-2">Login</a>
-        <a href="register.html" class="btn btn-outline-danger btn-sm"
-          >Register</a
+      <div class="container-fluid">
+        <img
+          class="mr-2"
+          width="40px"
+          height="40px"
+          src="assets/img/icons/logo.svg"
+        />
+        <a
+          class="navbar-brand text-danger font-lg font-weight-bold d-none d-sm-block"
+          href="#"
+          ><h3><b>အဝယ်တော်</b></h3></a
         >
+        <!-- search box in xs device -->
+        <form class="d-inline-flex d-sm-none input-group-sm">
+          <input
+            class="form-control font-weight-bold mr-1"
+            type="search"
+            placeholder="ဒီမှာရှာပါ..."
+          />
+          <button
+            class="btn btn-danger align-top btn-sm font-weight-bold"
+            type="submit"
+          >
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </form>
+        <!-- # search box in xs device -->
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link font-weight-bold" href="#"
+                >ပင်မစာမျက်နှာ <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link font-weight-bold position-relative link_kinds"
+                id="link_kinds"
+                href="#"
+              >
+                အမျိုးအစားများ
+              </a>
+              <div id="list_group_kinds">
+                <ul
+                  class="list-group list-group-flush position-absolute shadow-lg"
+                >
+                  <li class="list-group-item list-group-item-action">
+                    ကုန်စုံနှင့်ကုန်ခြောက်
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    မနက်စာနှင့်နို့ထွက်ပစ္စည်း
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    ဟင်းသီးဟင်းရွက်နှင့်အသီးအနှံ
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    အသား၊ငါးနှင့်ပင်လယ်စာ
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    အချိုရည်နှင့်မုန့်မျိုးစုံ
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    အသင့်စားသုံးနိုင်သောအစားအစာများ
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    ဘီယာနှင့်ဝိုင်အမျိုးမျိုး
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <form class="form-inline ml-3 my-lg-0 input-group-sm">
+              <input
+                class="form-control mr-sm-2 font-weight-bold"
+                type="search"
+                placeholder="ဒီမှာရှာပါ..."
+              />
+              <button
+                class="btn btn-danger my-sm-0 btn-sm font-weight-bold"
+                type="submit"
+              >
+                ရှာမယ်လေ
+              </button>
+            </form>
+          </ul>
+          <button class="btn position-relative">
+            <img src="assets/img/icons/shopping-cart.svg" alt="..." />
+            <span class="badge badge-pill badge-danger mr-4 position-absolute"
+              >0</span
+            >
+          </button>
+          |
+          <a href="login.html" class="ml-4 mr-2">Login</a>
+          <a href="register.html" class="btn btn-outline-danger btn-sm"
+            >Register</a
+          >
+        </div>
       </div>
     </nav>
     <!-- # Nav Bar -->
@@ -694,7 +732,6 @@
     <!-- # footer -->
 
     <!-- bottom nav-bar -->
-
     <div class="d-block d-sm-none">
       <nav
         class="navbar fixed-bottom bg-glass navbar-light border-top shadow-sm justify-content-between"
@@ -727,7 +764,6 @@
         >
       </nav>
     </div>
-
     <!-- # bottom nav-bar -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -741,5 +777,24 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var nav_link_kinds_of_products = document.getElementById('link_kinds');
+      var list_groups_kinds_of_products = document.getElementById(
+        'list_group_kinds'
+      );
+
+      list_groups_kinds_of_products.style.display = 'none';
+
+      const isHover = (e) => e.parentElement.querySelector(':hover') === e;
+
+      document.addEventListener('mousemove', function checkHover() {
+        const hoveredOnLinkKinds = isHover(nav_link_kinds_of_products);
+        const hoveredOnListGroupsKinds = isHover(list_groups_kinds_of_products);
+
+        if (hoveredOnLinkKinds || hoveredOnListGroupsKinds)
+          list_groups_kinds_of_products.style.display = 'block';
+        else list_groups_kinds_of_products.style.display = 'none';
+      });
+    </script>
   </body>
 </html>
